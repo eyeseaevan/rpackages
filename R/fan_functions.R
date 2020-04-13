@@ -58,6 +58,7 @@ make_filename <- function(year) {
 #' @note If the value provided for the year parameter is not of type integer, the function will attempt to coerce it into a value of type integer, and if it cannot do so, an error fill be thrown
 #'
 #' @importFrom dplyr tbl_df
+#' @importFrom dplyr select
 #' 
 #' @examples
 #' accident_ym <- fars_read_years(c(2014, 2015))
