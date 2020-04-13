@@ -8,7 +8,7 @@
 #'
 #' @note If the data cannot be read, the program will attempt to read accident_xxx.CSV from the root dir. If neither can be read, an error will be thrown
 #'
-#' @importFrom dplyr tbl_df
+#' @import dplyr
 #' 
 #' @examples
 #' csvdata <- fars_read(fars_data.zip)
@@ -57,7 +57,7 @@ make_filename <- function(year) {
 #' 
 #' @note If the value provided for the year parameter is not of type integer, the function will attempt to coerce it into a value of type integer, and if it cannot do so, an error fill be thrown
 #'
-#' @importFrom dplyr
+#' @import dplyr
 #' 
 #' @examples
 #' accident_ym <- fars_read_years(c(2014, 2015))
@@ -87,7 +87,7 @@ fars_read_years <- function(years) {
 #' 
 #' @note If the value provided for the year parameter is not of type integer, the function will attempt to coerce it into a value of type integer, and if it cannot do so, an error fill be thrown
 #'
-#' @importFrom dplyr tbl_df
+#' @import dplyr
 #' @importFrom tidyr spread
 #' 
 #' @examples
@@ -113,7 +113,7 @@ fars_summarize_years <- function(years) {
 #' 
 #' @note If the value provided for the state.num is not of type numeric, and the value provided for the year parameter is not of type integer, the function will attempt to coerce it into a values of types numeric and integer, and if it cannot do so, an error fill be thrown
 #'
-#' @importFrom dplyr filter
+#' @import dplyr
 #' @importFrom maps map
 #' @importFrom graphics points
 
