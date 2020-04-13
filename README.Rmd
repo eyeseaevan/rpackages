@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # rpackages
 
 <!-- badges: start -->
+[![Travis build status](https://travis-ci.com/eyeseaevan/rpackages.svg?branch=master)](https://travis-ci.com/eyeseaevan/rpackages)
 <!-- badges: end -->
 
 The goal of rpackages is to complete Coursera's assignment for building R packages.
