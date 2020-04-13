@@ -11,7 +11,7 @@
 #' @import dplyr
 #' 
 #' @examples
-#' csvdata <- fars_read(fars_data.zip)
+#' csvdata <- fars_read(accident_2015)
 #' 
 #' @export
 fars_read <- function(filename) {
