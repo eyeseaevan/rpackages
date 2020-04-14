@@ -1,4 +1,4 @@
 library(testthat)
 library(rpackages)
 
-test_that("rpackages")
+test_check("rpackages")
