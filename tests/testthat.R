@@ -1,4 +1,4 @@
 library(testthat)
 library(rpackages)
 
-test_check("rpackages")
+test_dir(tests/testthat)
