@@ -1,5 +1,5 @@
 Sys.setenv("R_TESTS" = "")
-library(testthat)
+library(devtools)
 library(rpackages)
 
-testthat::test_dir('tests/testthat')
+devtools::test('tests/testthat')

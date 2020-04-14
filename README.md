@@ -25,7 +25,7 @@ install.packages("rpackages")
 Example
 -------
 
-This is an example showing to to view fatal car accidents in Florida:
+This is an example showing how to view fatal car accidents in Florida:
 
 ``` r
 library(rpackages)
