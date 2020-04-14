@@ -19,6 +19,6 @@ A function that converts the accident data to an object of the tbl_df class, a s
 If the data cannot be read, the program will attempt to read accident_xxx.CSV from the root dir. If neither can be read, an error will be thrown
 }
 \examples{
-csvdata <- fars_read(accident_2015)
+csvdata <- fars_read("accident_2015")
 
 }
