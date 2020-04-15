@@ -19,7 +19,6 @@ library(rpackages)
 ```
 
 # Package Description
-
 The goal of rpackages is to complete Coursera’s assignment for building R packages.
 
 
@@ -70,3 +69,4 @@ Displays a map plotting the location of accidents in a certain state for a certa
 
 ```{r}
 fars_map_state(49, 2014)
+```
