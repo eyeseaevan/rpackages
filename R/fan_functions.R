@@ -2,7 +2,7 @@
 #' 
 #' A function that converts the accident data to an object of the tbl_df class, a subclass of data.frame
 #'
-#' @param filename The CSV file to turn into an object of the tbl_df class
+#' @param filename The data name to turn into an object of the tbl_df class
 #' 
 #' @return The tbl_df dataframe object
 #'
@@ -11,7 +11,7 @@
 #' @import dplyr
 #' 
 #' @examples
-#' csvdata <- fars_read("accident_2015")
+#' data <- fars_read("accident_2015")
 #' 
 #' @export
 fars_read <- function(filename) {
@@ -49,9 +49,9 @@ make_filename <- function(year) {
 
 #' fars_read_years
 #' 
-#' A function that will read the accident CSV file(s) for given year(s), and return the year and month of the found observations
+#' A function that will read the accident data for given year(s), and return the year and month of the found observations
 #'
-#' @param year The year(s) of the accident CSV data file(s) to use
+#' @param year The year(s) of the accident data to use
 #' 
 #' @return The tbl_df dataframe object, containing the year and month of the found observations
 #' 
@@ -79,9 +79,9 @@ fars_read_years <- function(years) {
 
 #' fars_summarize_years
 #' 
-#' A function that will summarize the number of observations for every month, in the accident CSV file(s), by years
+#' A function that will summarize the number of observations for every month, in the accident data, by years
 #'
-#' @param year The year(s) of the accident CSV data file(s) to use
+#' @param year The year(s) of the accident data to use
 #' 
 #' @return The tbl_df dataframe object, containing the summary
 #' 
@@ -107,7 +107,7 @@ fars_summarize_years <- function(years) {
 #' A function will plot the location of the observations with a LONGITUD value over 900, and a LATITUDE value over 90, in a specified state, during a specified year, on a map
 #'
 #' @param state.num The number of the state to filter the observations for
-#' @param year The year(s) of the accident CSV data file(s) to use
+#' @param year The year(s) of the accident data to use
 #' 
 #' @return A map object containing plotted points for the location of each observation in a specified state, with a LONGITUD value over 900, and a LATITUDE value over 90, during a specified year
 #' 

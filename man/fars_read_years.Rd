@@ -7,13 +7,13 @@
 fars_read_years(years)
 }
 \arguments{
-\item{year}{The year(s) of the accident CSV data file(s) to use}
+\item{year}{The year(s) of the accident data to use}
 }
 \value{
 The tbl_df dataframe object, containing the year and month of the found observations
 }
 \description{
-A function that will read the accident CSV file(s) for given year(s), and return the year and month of the found observations
+A function that will read the accident data for given year(s), and return the year and month of the found observations
 }
 \note{
 If the value provided for the year parameter is not of type integer, the function will attempt to coerce it into a value of type integer, and if it cannot do so, an error fill be thrown

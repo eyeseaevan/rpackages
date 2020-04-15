@@ -17,3 +17,56 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(rpackages)
 ```
+
+# Package Description
+
+The goal of rpackages is to complete Coursera’s assignment for building R packages.
+
+
+# Load Packages
+
+```{r}
+library(rpackages)
+```
+
+# Included Data
+
+Data files located in:
+
+```{r}
+list.files(system.file('extdata'), package = 'rpackages')
+```
+
+## Package Functions
+
+### Function 'make_filename'
+
+Returns a filename with the prefix 'accident_' followed by a given year
+
+```{r}
+make_filename(2015)
+```
+
+### Function 'fars_read_years'
+
+Reads the accident data for given year(s), and return the year and month of the found observations
+
+```{r}
+fars_read_years(2013)
+```
+
+### Function 'fars_summarize_years'
+
+Summarizes yearly accident data, by month and year
+
+```{r}
+plot(fars_summarize_years(2015))
+fars_summarize_years(c(2015, 2014))
+```
+
+### Function 'fars_map_state'
+
+Displays a map plotting the location of accidents in a certain state for a certain year
+
+```{r}
+fars_map_state(49, 2014)

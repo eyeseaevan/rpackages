@@ -9,7 +9,7 @@ fars_map_state(state.num, year)
 \arguments{
 \item{state.num}{The number of the state to filter the observations for}
 
-\item{year}{The year(s) of the accident CSV data file(s) to use}
+\item{year}{The year(s) of the accident data to use}
 }
 \value{
 A map object containing plotted points for the location of each observation in a specified state, with a LONGITUD value over 900, and a LATITUDE value over 90, during a specified year

@@ -7,13 +7,13 @@
 fars_summarize_years(years)
 }
 \arguments{
-\item{year}{The year(s) of the accident CSV data file(s) to use}
+\item{year}{The year(s) of the accident data to use}
 }
 \value{
 The tbl_df dataframe object, containing the summary
 }
 \description{
-A function that will summarize the number of observations for every month, in the accident CSV file(s), by years
+A function that will summarize the number of observations for every month, in the accident data, by years
 }
 \note{
 If the value provided for the year parameter is not of type integer, the function will attempt to coerce it into a value of type integer, and if it cannot do so, an error fill be thrown
