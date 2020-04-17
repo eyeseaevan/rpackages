@@ -7,7 +7,7 @@
 fars_summarize_years(years)
 }
 \arguments{
-\item{year}{The year(s) of the accident data to use}
+\item{years}{The year(s) of the accident data to use}
 }
 \value{
 The tbl_df dataframe object, containing the summary

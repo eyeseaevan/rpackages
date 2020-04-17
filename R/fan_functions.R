@@ -9,6 +9,7 @@
 #' @note If the data cannot be read, the program will attempt to read accident_xxx.CSV from the root dir. If neither can be read, an error will be thrown
 #'
 #' @import dplyr
+#' @importFrom readr read_csv
 #' 
 #' @examples
 #' data <- fars_read("accident_2015")
@@ -32,7 +33,7 @@ fars_read <- function(filename) {
 #' 
 #' A function returns a filename with the prefix 'accident_' followed by a given year
 #' 
-#' @param year The year to append to the 'accident_' prefix
+#' @param years The year to append to the 'accident_' prefix
 #' 
 #' @return A string containing the prefix 'accident_' followed by the given year
 #' 
@@ -42,16 +43,16 @@ fars_read <- function(filename) {
 #' filename <- make_filename(2015)
 #' 
 #' @export
-make_filename <- function(year) {
-        year <- as.integer(year)
-        sprintf("accident_%d", year)
+make_filename <- function(years) {
+        year <- as.integer(years)
+        sprintf("accident_%d", years)
 }
 
 #' fars_read_years
 #' 
 #' A function that will read the accident data for given year(s), and return the year and month of the found observations
 #'
-#' @param year The year(s) of the accident data to use
+#' @param years The year(s) of the accident data to use
 #' 
 #' @return The tbl_df dataframe object, containing the year and month of the found observations
 #' 
@@ -81,7 +82,7 @@ fars_read_years <- function(years) {
 #' 
 #' A function that will summarize the number of observations for every month, in the accident data, by years
 #'
-#' @param year The year(s) of the accident data to use
+#' @param years The year(s) of the accident data to use
 #' 
 #' @return The tbl_df dataframe object, containing the summary
 #' 
@@ -107,7 +108,7 @@ fars_summarize_years <- function(years) {
 #' A function will plot the location of the observations with a LONGITUD value over 900, and a LATITUDE value over 90, in a specified state, during a specified year, on a map
 #'
 #' @param state.num The number of the state to filter the observations for
-#' @param year The year(s) of the accident data to use
+#' @param years The year(s) of the accident data to use
 #' 
 #' @return A map object containing plotted points for the location of each observation in a specified state, with a LONGITUD value over 900, and a LATITUDE value over 90, during a specified year
 #' 

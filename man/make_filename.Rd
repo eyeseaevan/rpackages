@@ -4,10 +4,10 @@
 \alias{make_filename}
 \title{make_filename}
 \usage{
-make_filename(year)
+make_filename(years)
 }
 \arguments{
-\item{year}{The year to append to the 'accident_' prefix}
+\item{years}{The year to append to the 'accident_' prefix}
 }
 \value{
 A string containing the prefix 'accident_' followed by the given year
