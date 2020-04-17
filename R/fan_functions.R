@@ -123,8 +123,8 @@ fars_summarize_years <- function(years) {
 #' alabama_accidents <- fars_map_state(1, 2015)
 #' 
 #' @export
-fars_map_state <- function(state.num, year) {
-        filename <- make_filename(year)
+fars_map_state <- function(state.num, years) {
+        filename <- make_filename(years)
         print(filename)
         data <- fars_read(filename)
         print(data)

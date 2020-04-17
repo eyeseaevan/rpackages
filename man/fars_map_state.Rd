@@ -4,7 +4,7 @@
 \alias{fars_map_state}
 \title{fars_map_state}
 \usage{
-fars_map_state(state.num, year)
+fars_map_state(state.num, years)
 }
 \arguments{
 \item{state.num}{The number of the state to filter the observations for}
