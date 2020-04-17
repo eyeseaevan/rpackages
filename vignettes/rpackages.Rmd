@@ -1,8 +1,10 @@
 ---
 title: "rpackages"
+author: "eyeseaevan"
+date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{rpackages}
+  %\VignetteIndexEntry{Vignette Title}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -30,10 +32,12 @@ library(rpackages)
 
 # Included Data
 
-Data files located in:
+Data files are called by:
 
 ```{r}
-list.files(system.file('extdata'), package = 'rpackages')
+data(accident_2013)
+data(accident_2014)
+data(accident_2015)
 ```
 
 ## Package Functions
